@@ -2,6 +2,6 @@
 
 Rename the following after cloning:
 ====================================
-1. app.js => MyApp -> <new name>
+1. app.js => MyApp -> [new name]
 2. application.html.erb => title
-3. database.yml => <new name>
+3. database.yml => [new name]
