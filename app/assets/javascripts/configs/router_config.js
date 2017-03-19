@@ -5,12 +5,13 @@
 MyApp.config(['$urlRouterProvider', '$stateProvider',
   function($urlRouterProvider, $stateProvider) {
 
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/player');
 
     $stateProvider
-      .state('dashboard', {
-        url: '/dashboard',
-        template: '<h3><em>Hello Angular</em></h3>'
+      .state('player', {
+        url: '/player',
+        templateUrl: 'templates/player.html',
+        controller: 'PlayerCtrl',
       })
   }]);
 

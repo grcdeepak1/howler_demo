@@ -18,6 +18,7 @@
 //= require angular-ui-router
 //= require restangular
 //= require bootstrap-3.3.7
+//= require howler
 
 
 //= require static_pages

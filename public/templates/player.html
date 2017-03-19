@@ -1,0 +1,37 @@
+<h1>Player</h1>
+
+<ul id="list">
+  <li ng-repeat="song in songs" ng-click="play(song)">
+    <a>{{ song.title }}</a>
+  </li>
+</ul>
+
+<!-- Top Info -->
+<div id="title">
+  <span id="track"></span>
+  <div id="timer">0:00</div>
+  <div id="duration">0:00</div>
+</div>
+
+<!-- Controls -->
+<div class="controlsOuter">
+  <div class="controlsInner">
+    <div id="loading"></div>
+    <button class="btn" id="stopBtn" ng-click="stop()">Stop</button>
+    <button class="btn" id="playPauseBtn" ng-click="playPause()">Play</button>
+    <button class="btn" id="prevBtn" ng-click="customSeek('-', 15)">-15sec</button>
+    <button class="btn" id="nextBtn" ng-click="customSeek('+', 15)">+15sec</button>
+  </div>
+</div>
+
+<!-- Progress -->
+<div id="bar"></div>
+<div id="progress"></div>
+
+
+<!-- Volume -->
+<!-- <div id="volume" class="fadeout">
+  <div id="barFull" class="bar"></div>
+  <div id="barEmpty" class="bar"></div>
+  <div id="sliderBtn"></div>
+</div> -->
